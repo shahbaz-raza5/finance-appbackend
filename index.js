@@ -981,4 +981,8 @@ app.get("/financierrecordfilter/:id/:startDate/:endDate", async (req, res) => {
   res.json({ mypayout: filteredMypayout, mypayin: filteredMypayin });
 });
 
+app.get('*',()=>{
+  //send index.html from build folder
+})
+
 app.listen(PORT);
